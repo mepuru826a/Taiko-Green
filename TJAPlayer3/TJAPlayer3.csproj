@@ -9,10 +9,10 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TJAPlayer3</RootNamespace>
-    <AssemblyName>TJAPlayer3</AssemblyName>
+    <AssemblyName>Taiko-Green</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <ApplicationIcon>Resources\TJAPlayer3.ico</ApplicationIcon>
+    <ApplicationIcon>Taiko-Green.ico</ApplicationIcon>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <SignAssembly>false</SignAssembly>
     <AssemblyOriginatorKeyFile>
@@ -64,6 +64,9 @@
     <UseVSHostingProcess>true</UseVSHostingProcess>
     <LangVersion>7.3</LangVersion>
   </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
   <PropertyGroup />
   <PropertyGroup>
     <ApplicationManifest>TJAPlayer3.manifest</ApplicationManifest>
@@ -274,6 +277,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="dtx.ico" />
+    <Content Include="Taiko-Green.ico" />
     <None Include="Resources\TJAPlayer3.ico" />
   </ItemGroup>
   <ItemGroup>
