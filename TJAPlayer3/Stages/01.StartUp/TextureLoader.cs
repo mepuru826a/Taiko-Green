@@ -28,6 +28,7 @@ namespace TJAPlayer3
         const string TAIKO = @"6_Taiko\";
         const string GAUGE = @"7_Gauge\";
         const string FOOTER = @"8_Footer\";
+        const string TAIKO_EFFECT= @"8_taiko_Effect\";
         const string END = @"9_End\";
         const string EFFECTS = @"10_Effects\";
         const string BALLOON = @"11_Balloon\";
@@ -99,6 +100,7 @@ namespace TJAPlayer3
             SongSelect_Background = TxC(SONGSELECT + @"Background.png");
             SongSelect_Header = TxC(SONGSELECT + @"Header.png");
             SongSelect_Footer = TxC(SONGSELECT + @"Footer.png");
+            SongSelect_Footer = TxC(SONGSELECT + @"taiko_Effect.png");
             SongSelect_Difficulty = TxC(SONGSELECT + @"Difficulty.png");
             SongSelect_Auto = TxC(SONGSELECT + @"Auto.png");
             SongSelect_Level = TxC(SONGSELECT + @"Level.png");
@@ -114,6 +116,7 @@ namespace TJAPlayer3
             SongSelect_GenreText = TxC(SONGSELECT + @"GenreText.png");
             SongSelect_Cursor_Left = TxC(SONGSELECT + @"Cursor_Left.png");
             SongSelect_Cursor_Right = TxC(SONGSELECT + @"Cursor_Right.png");
+            SongSelect_Cursor_Mtaiko = TxC(SONGSELECT + @"Cursor_Mtaiko.png");
             for (int i = 0; i < SongSelect_Bar_Genre.Length; i++)
             {
                 SongSelect_Bar_Genre[i] = TxC(SONGSELECT + @"Bar_Genre_" + i.ToString() + ".png");
@@ -545,6 +548,7 @@ namespace TJAPlayer3
             TJAPlayer3.tテクスチャの解放(ref SongSelect_Background);
             TJAPlayer3.tテクスチャの解放(ref SongSelect_Header);
             TJAPlayer3.tテクスチャの解放(ref SongSelect_Footer);
+            TJAPlayer3.tテクスチャの解放(ref SongSelect_taiko_Effect);
             TJAPlayer3.tテクスチャの解放(ref SongSelect_Difficulty);
             TJAPlayer3.tテクスチャの解放(ref SongSelect_Auto);
             TJAPlayer3.tテクスチャの解放(ref SongSelect_Level);
@@ -559,6 +563,7 @@ namespace TJAPlayer3
             TJAPlayer3.tテクスチャの解放(ref SongSelect_GenreText);
             TJAPlayer3.tテクスチャの解放(ref SongSelect_Cursor_Left);
             TJAPlayer3.tテクスチャの解放(ref SongSelect_Cursor_Right);
+            TJAPlayer3.tテクスチャの解放(ref SongSelect_Cursor_Mtaiko);
             for (int i = 0; i < SongSelect_Bar_Genre.Length; i++)
             {
                 TJAPlayer3.tテクスチャの解放(ref SongSelect_Bar_Genre[i]);
@@ -858,6 +863,7 @@ namespace TJAPlayer3
         public CTexture SongSelect_Background,
             SongSelect_Header,
             SongSelect_Footer,
+            SongSelect_taiko_Effect,
             SongSelect_Difficulty,
             SongSelect_Auto,
             SongSelect_Level,
@@ -872,6 +878,7 @@ namespace TJAPlayer3
             SongSelect_GenreText,
             SongSelect_Cursor_Left,
             SongSelect_Cursor_Right,
+            SongSelect_Cursor_Mtaiko,
             SongSelect_ScoreWindow_Text;
         public CTexture[] SongSelect_GenreBack = new CTexture[9],
             SongSelect_ScoreWindow = new CTexture[(int)Difficulty.Total],

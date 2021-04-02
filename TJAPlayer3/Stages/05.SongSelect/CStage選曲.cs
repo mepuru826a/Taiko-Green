@@ -330,8 +330,12 @@ namespace TJAPlayer3
 				if( TJAPlayer3.Tx.SongSelect_Footer != null )
                     TJAPlayer3.Tx.SongSelect_Footer.t2D描画( TJAPlayer3.app.Device, 0, 720 - TJAPlayer3.Tx.SongSelect_Footer.sz画像サイズ.Height );
 
-                #region ネームプレート
-                for (int i = 0; i < TJAPlayer3.ConfigIni.nPlayerCount; i++)
+				this.actInformation.On進行描画();
+				if (TJAPlayer3.Tx.SongSelect_taiko_Effect != null)
+					TJAPlayer3.Tx.SongSelect_taiko_Effect.t2D描画(TJAPlayer3.app.Device, 0, 720 );
+
+				#region ネームプレート
+				for (int i = 0; i < TJAPlayer3.ConfigIni.nPlayerCount; i++)
                 {
                     if (TJAPlayer3.Tx.NamePlate[i] != null)
                     {

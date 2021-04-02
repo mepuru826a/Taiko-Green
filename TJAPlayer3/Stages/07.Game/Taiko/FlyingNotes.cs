@@ -156,6 +156,7 @@ namespace TJAPlayer3
                     }
                 }
 			}
+       
             return base.On進行描画();
         }
 		

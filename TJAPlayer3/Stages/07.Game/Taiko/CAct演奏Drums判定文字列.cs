@@ -108,7 +108,7 @@ namespace TJAPlayer3
 						int y = ( baseY + base.st状態[ j ].n相対Y座標 );
 						if( TJAPlayer3.Tx.Judge != null )
 						{
-                            TJAPlayer3.Tx.Judge.t2D描画( TJAPlayer3.app.Device, x, y, base.st判定文字列[ (int) base.st状態[ j ].judge ].rc );
+							TJAPlayer3.Tx.Judge.t2D描画(TJAPlayer3.app.Device, x, y, base.st判定文字列[(int)base.st状態[j].judge].rc);
 						}
 					}
 				}

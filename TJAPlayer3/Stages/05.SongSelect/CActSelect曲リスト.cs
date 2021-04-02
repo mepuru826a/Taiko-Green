@@ -1455,11 +1455,12 @@ namespace TJAPlayer3
 			    {
                     int Cursor_L = 372 - this.ct三角矢印アニメ.n現在の値 / 50;
                     int Cursor_R = 819 + this.ct三角矢印アニメ.n現在の値 / 50;
+					 int Cursor_M = 819 + this.ct三角矢印アニメ.n現在の値 / 50;
                     int y = 289;
+				
+					// 描画。
 
-                        // 描画。
-
-                    if (TJAPlayer3.Tx.SongSelect_Cursor_Left != null)
+					if (TJAPlayer3.Tx.SongSelect_Cursor_Left != null)
                     {
                         TJAPlayer3.Tx.SongSelect_Cursor_Left.Opacity = 255 - (ct三角矢印アニメ.n現在の値 * 255 / ct三角矢印アニメ.n終了値) ;
                         TJAPlayer3.Tx.SongSelect_Cursor_Left.t2D描画(TJAPlayer3.app.Device, Cursor_L, y);
@@ -1468,8 +1469,15 @@ namespace TJAPlayer3
                     {
                         TJAPlayer3.Tx.SongSelect_Cursor_Right.Opacity = 255 - (ct三角矢印アニメ.n現在の値 * 255 / ct三角矢印アニメ.n終了値) ;
                         TJAPlayer3.Tx.SongSelect_Cursor_Right.t2D描画(TJAPlayer3.app.Device, Cursor_R, y);
-                    }
-                }
+					}
+					if (TJAPlayer3.Tx.SongSelect_Cursor_Mtaiko != null)
+					{
+						TJAPlayer3.Tx.SongSelect_Cursor_Mtaiko.Opacity = 255 - (ct三角矢印アニメ.n現在の値 * 255 / ct三角矢印アニメ.n終了値);
+						TJAPlayer3.Tx.SongSelect_Cursor_Mtaiko.t2D描画(TJAPlayer3.app.Device, Cursor_M, y);
+
+
+					}
+				}
 			    //-----------------
 			    #endregion
 
@@ -1508,14 +1516,14 @@ namespace TJAPlayer3
 							tx選択している曲のサブタイトル.t2D描画( TJAPlayer3.app.Device, 707, nサブタイY );
                             if( this.ttk選択している曲の曲名 != null )
                             {
-						    	ResolveTitleTexture(this.ttk選択している曲の曲名).t2D描画( TJAPlayer3.app.Device, 750, TJAPlayer3.Skin.SongSelect_Overall_Y + 23);
+						    	ResolveTitleTexture(this.ttk選択している曲の曲名).t2D描画( TJAPlayer3.app.Device, 750, 130);
                             }
                         }
                         else
                         {
                             if( this.ttk選択している曲の曲名 != null )
                             {
-	    						ResolveTitleTexture(this.ttk選択している曲の曲名).t2D描画( TJAPlayer3.app.Device, 750, TJAPlayer3.Skin.SongSelect_Overall_Y + 23);
+	    						ResolveTitleTexture(this.ttk選択している曲の曲名).t2D描画( TJAPlayer3.app.Device, 750, 130);
                             }
                         }
 
