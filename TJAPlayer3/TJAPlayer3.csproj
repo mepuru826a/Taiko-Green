@@ -141,6 +141,7 @@
     <Compile Include="Items\CItemList.cs" />
     <Compile Include="Items\CItemThreeState.cs" />
     <Compile Include="Items\CItemToggle.cs" />
+    <Compile Include="r現在選択中の曲\strジャンル.cs" />
     <Compile Include="Songs\CBoxDef.cs" />
     <Compile Include="Songs\CCourse.cs" />
     <Compile Include="Songs\CDTX.cs" />
